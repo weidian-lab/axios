@@ -80,6 +80,6 @@ describe('core::settle', function() {
       }
     };
     settle(resolve, reject, response);
-    expect(validateStatus).toHaveBeenCalledWith(500);
+    expect(validateStatus).toHaveBeenCalledWith(500, response);
   });
 });
